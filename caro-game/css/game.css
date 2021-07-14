@@ -1,0 +1,56 @@
+.show-result {
+    width: 100%;
+    top:0;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+
+.show-result h1 {
+    position: relative;
+    top:50%;
+    display: inline-block;
+    transform: translateY(-50%);
+    font-size: 50px;
+    
+}
+
+.winner {
+    animation: winner2 0.5s 0s linear infinite !important;
+}
+
+@keyframes winner2 {
+    from {
+        background-color: burlywood;
+    }
+    to {
+        background-color: #f7f7f7;
+    }
+}
+
+.x-player, .o-player{
+    animation: showTime 0.5s 0s ease-in-out 1  ;
+}
+
+@keyframes showTime  {
+    from {
+        background-color: #f7f7f7;
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+.x-player {
+    background-color: #dab8f3;
+}
+.o-player {
+    background-color: #0a97b0;
+}
+
+
+
